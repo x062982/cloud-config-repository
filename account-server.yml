@@ -1,5 +1,5 @@
 config:
-  info: 123 2
+  info: 123啊大大 2
 spring:
   datasource:
     url: jdbc:oracle:thin:@localhost:1521:orcl
