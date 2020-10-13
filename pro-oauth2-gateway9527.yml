@@ -6,19 +6,21 @@ spring:
       discovery:
         prefer-ip-address: true
 
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          jwk-set-uri: 'http://localhost:6001/rsa/publicKey'  # 配置RSA的公钥访问地址
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+  main:
+    allow-bean-definition-overriding: true
+
   redis:
     host: localhost
     port: 6379
-  main:
-    allow-bean-definition-overriding: true
 
 secure:
   ignore:
     urls: # 配置白名单路径
       - "/actuator/**"
       - "/oauth2-server/oauth/token"
+
