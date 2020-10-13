@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: oauth2-server
+
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 100ms
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+  cloud:
+    consul:
+      port: 8500
+      host: localhost
+      prefer-ip-address: true
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: "*"
