@@ -14,9 +14,3 @@ spring:
       port: 8500
       discovery:
         prefer-ip-address: true
-
-  rabbitmq:
-    password: shane
-    username: shane
-    host: localhost
-    port: 5672
