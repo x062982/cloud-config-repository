@@ -5,11 +5,6 @@ spring:
       host: localhost
       discovery:
         prefer-ip-address: true
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-          lower-case-service-id: true
 
   security:
     oauth2:
