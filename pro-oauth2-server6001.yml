@@ -12,11 +12,7 @@ spring:
         max-active: 8
         max-idle: 8
         min-idle: 0
-  cloud:
-    consul:
-      port: 8500
-      host: localhost
-      prefer-ip-address: true
+
 
 management:
   endpoint:

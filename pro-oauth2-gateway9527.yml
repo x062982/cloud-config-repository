@@ -5,6 +5,7 @@ spring:
     consul:
       port: 8500
       host: localhost
+      prefer-ip-address: true
 
     gateway:
       discovery:
