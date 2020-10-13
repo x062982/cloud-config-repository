@@ -17,5 +17,17 @@ spring:
   redis:
     host: localhost
     port: 6379
+    database: 0
+    timeout: 100ms
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
 
+  rabbitmq:
+    password: shane
+    username: shane
+    host: localhost
+    port: 5672
 
