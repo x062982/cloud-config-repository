@@ -42,3 +42,4 @@ secure:
     urls: # 配置白名单路径
       - "/actuator/**"
       - "/oauth2-server/oauth/token"
+      - "/account-server/**"
